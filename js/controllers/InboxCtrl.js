@@ -4,9 +4,9 @@
 
 var app = angular.module('EmailApp');
 
-app.controller('InboxCtrl',function($scope){
+app.controller('InboxCtrl',['$scope',function($scope){
 
     console.log("Inbox Controller");
     $scope.title = "My Inbox";
 
-});
+}]);
